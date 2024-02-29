@@ -2,75 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #container {
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            background-color: green;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        #center {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        #menu {
-            width: 80px;
-            height: 50px;
-            background-color: green;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .bar {
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            width: 100%;
-            height: 100%;
-            background-color: azure;
-            border-radius: 4px;
-            transition: transform 0.5s ease;
-        }
-
-        .open .bar:nth-child(1) {
-            transform: translateY(25px) rotate(-45deg);
-        }
-
-        .open .bar:nth-child(2) {
-            transform: scale(0);
-        }
-
-        .open .bar:nth-child(3) {
-            transform: translateY(-8px) rotate(45deg);
-        }
-    </style>
 </head>
 <body>
-    <div id="container">
-        <div id="center">
-            <div id="menu" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </div>
-    </div>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById("menu");
-            menu.classList.toggle("open");
-        }
-    </script>
+    <div>My name is coder</div>
+    
 </body>
 </html>
+
+<style>
+    div {
+        background-color: red;
+    }
+</style>
